@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Will-H93/cruise-ships#readme",
   "dependencies": {
     "jest": "^28.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2"
   }
 }
