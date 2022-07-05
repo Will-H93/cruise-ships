@@ -1,10 +1,13 @@
 class Ship {
-    ship(name) {
-        this.name = name;
-        this.currentPort = 'Liverpool';
+    ship(port) {
+        this.currentPort = port.name;
     };
     setSail() {
+        this.previousPort = this.currentPort;
         this.currentPort = ''
+    }
+    dock(port) {
+        this.currentPort = port;
     }
 };
 
