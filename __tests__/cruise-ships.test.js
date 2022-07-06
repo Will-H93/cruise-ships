@@ -22,7 +22,9 @@ describe('ship', () => {
                 name: 'Dover',
                 ships: []
             }
-            itinerary = new Itinerary([liverpool, dover])
+            itinerary = {
+                ports: [liverpool, dover]
+            }
             ship = new Ship(itinerary)
         })
         it('has an instance', () => {
