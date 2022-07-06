@@ -1,5 +1,5 @@
 class Port {
-    port(name) {
+    constructor(name) {
         this.name = name;
     }
 }
