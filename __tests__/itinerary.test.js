@@ -6,9 +6,9 @@ describe('itinerary', () => {
         expect(new Itinerary(['Liverpool', 'Dublin', 'Dover'])).toBeInstanceOf(Object)
     })
     it('can contain a list of ports', () => {
-        const dover = new Port('Dover');
-        const liverpool = new Port('Liverpool');
-        const dublin = new Port('Dublin');
+        const dover = jest.fn();
+        const liverpool = jest.fn();
+        const dublin = jest.fn();
         
         const itinerary = new Itinerary([liverpool, dublin, dover])
 
